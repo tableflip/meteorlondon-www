@@ -1,0 +1,26 @@
+<template name="admin">
+  <div class="container">
+    <table class="table table-bordered table-striped table-condensed">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each emails}}
+        <tr>
+          <td>{{createdAt}}</td>
+          <td>{{email}}</td>
+        </tr>
+        {{/each}}
+      </tbody>
+      <tfoot>
+      <tr>
+        <td><strong>Total</strong></td>
+        <td><strong>{{emails.count}}</strong></td>
+      </tr>
+      </tfoot>
+    </table>
+  </div>
+</template>

@@ -1,0 +1,10 @@
+body.admin{
+  padding-top: 0;
+  background: white url('/icon-driift-onlight.png') center 20px no-repeat;
+  background-size: auto 60px;
+}
+
+body.admin .table{
+  margin:100px auto;
+  background: white;
+}

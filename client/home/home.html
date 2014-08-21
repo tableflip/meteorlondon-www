@@ -1,0 +1,39 @@
+<template name="home">
+  <section id="hero">
+    <div id="logo">
+      <div class="container">
+        <h1>Meteor London</h1>
+        <p>Meteor development specialists based in London, UK</p>
+        <a href="https://twitter.com/_alanshaw">
+          <img src="https://twitter.com/api/users/profile_image/_alanshaw?size=bigger" title="Alan Shaw">
+        </a>
+        <a href="https://twitter.com/cwaring">
+          <img src="https://twitter.com/api/users/profile_image/cwaring?size=bigger" title="Chris Waring">
+        </a>
+        <a href="https://twitter.com/olizilla">
+          <img src="https://en.gravatar.com/avatar/1114a99d8da01f890f39c02bd2b1bfc3" title="Oli Evans">
+        </a>
+        <h2>Workshop: one day to launch</h2>
+        <div class="input-group col-md-offset-2 col-md-8">
+        <p class="lead">An 8h intensive training designed to arm you with the knowledge required to build and launch your ideas in a day using Meteor.</p>
+        </div>
+        <form class="register row">
+          {{#unless email}}
+          <p>Sign up for the advanced ticket release</p>
+          <div class="input-group col-md-offset-4 col-md-4">
+            <input class="form-control" id="input-email" type="email" placeholder="Email address"/>
+            <span class="input-group-btn">
+              <button class="btn btn-primary">GO</button>
+            </span>
+          </div>
+          {{else}}
+          <div class="confirm">
+            <p><strong>You're on the VIP list, wise choice.</strong></p>
+            <p>❤ <a href="http://twitter.com/meteorlondon">@meteorlondon</a></p>
+          </div>
+          {{/unless}}
+        </form>
+      </div>
+    </div>
+  </section>
+</template>
