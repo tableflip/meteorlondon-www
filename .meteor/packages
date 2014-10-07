@@ -5,9 +5,13 @@
 
 standard-app-packages
 insecure
-iron-router
-iron-router-auth
 accounts-meteor-developer
 accounts-ui
-moment
-bootstrap-flatly
+iron:router
+fuatsengul:iron-router-auth
+mizzao:bootstrap-3
+grokbot:bootstrap-flatly
+mrt:moment
+london:body-class
+meteorhacks:fast-render
+
