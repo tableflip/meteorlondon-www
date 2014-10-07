@@ -1,9 +1,10 @@
 <template name="home">
-  <section id="hero">
-    <div id="logo">
-      <div class="container">
-        <h1>Meteor London</h1>
-        <p>Meteor development specialists based in London, UK</p>
+<section id="hero">
+  <div id="logo">
+    <div class="container">
+      <h1>Meteor London</h1>
+      <p>Meteor development specialists based in London, UK</p>
+      <div class="us">
         <a href="https://twitter.com/_alanshaw">
           <img src="http://gravatar.com/avatar/e36dc772e40dc8203ef90fa98e5b3adf" title="Alan Shaw">
         </a>
@@ -11,29 +12,61 @@
           <img src="http://gravatar.com/avatar/a762278bf0255d682fa666f1e6338a9a" title="Chris Waring">
         </a>
         <a href="https://twitter.com/olizilla">
-          <img src="https://en.gravatar.com/avatar/1114a99d8da01f890f39c02bd2b1bfc3" title="Oli Evans">
+          <img src="https://s.gravatar.com/avatar/1114a99d8da01f890f39c02bd2b1bfc3" title="Oli Evans">
         </a>
-        <h2>Workshop: one day to launch</h2>
-        <div class="input-group col-md-offset-2 col-md-8">
-        <p class="lead">8h intensive training designed to take you from idea to launch in a day.</p>
-        </div>
-        <form class="register row">
-          {{#unless email}}
-          <p>Sign up for the advanced ticket release</p>
-          <div class="input-group col-md-offset-4 col-md-4">
-            <input class="form-control" id="input-email" type="email" placeholder="Email address"/>
-            <span class="input-group-btn">
-              <button class="btn btn-primary">GO</button>
-            </span>
-          </div>
-          {{else}}
-          <div class="confirm">
-            <p><strong>You're on the VIP list, wise choice.</strong></p>
-            <p>❤ <a href="http://twitter.com/meteorlondon">@meteorlondon</a></p>
-          </div>
-          {{/unless}}
-        </form>
       </div>
+      <h2>Workshop: 1 day to launch</h2>
+      <p class="lead">8h intensive training to take you from idea to deployment in a day</p>
     </div>
-  </section>
+  </div>
+</section>
+
+<section id="date">
+  <div class="container">
+    <time class="cal" datetime="2014-10-31">
+      <span class="day">31</span>
+      <span class="month">October</span>
+      <span class="year">2014</span>
+    </time>
+  </div>
+</section>
+
+<section id="details" class="copy">
+  <div class="container">
+    <h2>What you'll get</h2>
+    <p><strong>A full-stack introduction to building web apps with Meteor.</strong>
+      With hands on modules covering the <strong>frontend</strong> &amp; <strong>backend</strong>,
+      <strong>security</strong> &amp; <strong>deployment</strong>,we'll show you
+      every step of the journey from static HTML to a full, dynamic, app.
+    </p>
+  </div>
+</section>
+
+<section id="more-info" class="copy">
+  <div class="container">
+    <h2>Would you like to know more?</h2>
+    <form class="register row">
+      {{#unless email}}
+      <p>Join the announcement mailing list for advanced notice of upcoming courses.</p>
+      <div class="input-group col-md-offset-4 col-md-4">
+        <input class="form-control" id="input-email" type="email" placeholder="Email address"/>
+        <span class="input-group-btn">
+          <button class="btn btn-primary">Send</button>
+        </span>
+      </div>
+      {{else}}
+      <div class="confirm">
+        <p><strong>You're on the VIP list, wise choice.</strong></p>
+        <p>❤ <a href="http://twitter.com/meteorlondon">@meteorlondon</a></p>
+      </div>
+      {{/unless}}
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+  <p>A <a href="http://www.meetup.com/Meteor-London/">Meteor London</a> production, brought to you by <a href="http://tableflip">TABLEFLIP</a> &amp; <a href="https://wwaves.co">WWAVES</a></p>
+  </div>
+</footer>
 </template>
