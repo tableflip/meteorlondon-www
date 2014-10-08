@@ -65,6 +65,9 @@ p.lead{
   margin-top:-86px;
   text-align:center;
 }
+#details{
+
+}
 section.copy{
   margin-top:50px;
 }
@@ -74,6 +77,9 @@ section.copy{
 .copy p{
   font-weight:400;
   font-size:20px;
+}
+.invert h2, .invert p{
+  color:#fff;
 }
 .cal{
   display: inline-block;
@@ -98,10 +104,45 @@ section.copy{
   font-size: 20px;
   font-family: 'Raleway Dots', serif;
 }
-#tickets{
-  padding-bottom: 275px;
-  background:url("/img/ticket.svg") bottom center no-repeat;
-  background-size:500px auto;
+.ticket{
+  max-width:500px;
+  display: block;
+  margin: 65px auto 0;
+}
+.ticket img{
+  width:100%;
+}
+.leftbox{
+  background: #222;
+}
+.leftbox{
+  text-align:left;
+  max-width: 600px;
+  padding: 1px 36px 50px 50px;
+}
+.leftbox h1{
+  font-family: 'Raleway Dots', serif;
+  font-size:60px;
+  border-bottom:solid white 4px;
+  text-shadow:
+   0 -3px 0 #222,
+   0  3px 0 #222,
+   2px 0 0 #222,
+  -2px 0 0 #222,
+   0  2px 0 #222,
+   0 -2px 0 #222,
+   2px 0 0 #222,
+  -2px 0 0 #222,
+   0  2px 0 #222,
+   0 -2px 0 #222,
+   1px  1px #222,
+  -1px -1px 0 #222,
+   1px -1px 0 #222,
+  -1px  1px 0 #222;
+}
+.leftbox p {
+  font-weight: 200;
+  font-size:16px;
 }
 footer{
   margin-top:100px;
@@ -114,4 +155,15 @@ footer p{
 }
 footer a{
   color:gold;
+}
+
+@media screen and (min-width:600px) {
+  #details{
+    background:url("http://photos1.meetupstatic.com/photos/event/a/5/c/0/highres_365502432.jpeg") no-repeat right center;
+  }
+}
+@media screen and (min-width:1524px) {
+  #details{
+    background-size:calc(100% - 500px) auto;
+  }
 }
