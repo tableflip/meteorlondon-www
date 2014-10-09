@@ -23,7 +23,7 @@ body {
 }
 #logo h1 {
   position: relative;
-  font-size: 84px;
+  font-size: 40px;
   font-family: 'Raleway Dots', serif;
   font-weight: normal;
   line-height: 100px;
@@ -41,6 +41,7 @@ p {
   margin-top: 0;
 }
 .us {
+  display:none;
   padding-top:4px;
   margin-bottom:100px;
 }
@@ -158,6 +159,12 @@ footer a{
 }
 
 @media screen and (min-width:600px) {
+  #logo h1 {
+    font-size: 84px;
+  }
+  .us{
+    display:block;
+  }
   #details{
     background:url("http://photos1.meetupstatic.com/photos/event/a/5/c/0/highres_365502432.jpeg") no-repeat right center;
   }
