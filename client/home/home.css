@@ -1,27 +1,24 @@
-html, body {
-  height: 100%;
-}
-body {
+body.home {
   margin: 0;
   text-align:center;
   background:#eeefef;
 }
-#hero {
+.home #hero {
   background: #000 url(/img/bg.jpg);
   background-size: cover;
   min-height: 100%;
   overflow: auto;
 }
-#logo {
+.home #logo {
   position: absolute;
   top: 20vh;
   width: 100%;
   text-align: center;
 }
-#register {
+.home #register {
   margin-top: 10px;
 }
-#logo h1 {
+.home #logo h1 {
   position: relative;
   font-size: 40px;
   font-family: 'Raleway Dots', serif;
@@ -30,22 +27,22 @@ body {
   color: #fff;
   margin: 0;
 }
-h1,h2,h3,h4,h5 {
+.home h1,h2,h3,h4,h5 {
   color: #fff;
 }
-p {
+.home p {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-weight: lighter;
   color: #fff;
   opacity: 0.8;
   margin-top: 0;
 }
-.us {
+.home .us {
   display:none;
   padding-top:4px;
   margin-bottom:100px;
 }
-.us img {
+.home .us img {
   box-shadow: 0px 0px 1px #000;
   border-radius: 50%;
   margin: 0 10px;
@@ -54,35 +51,34 @@ p {
   padding: 4px;
   background-color: #fff;
 }
-.us img:hover {
+.home .us img:hover {
   opacity: 1;
 }
-p.lead{
+.home p.lead{
   color:gold;
   font-family: 'Raleway Dots', serif;
   font-weight:600;
 }
-#date{
+.home #date{
   margin-top:-86px;
   text-align:center;
 }
-#details{
-
-}
-section.copy{
+.home section.copy{
   margin-top:50px;
 }
-.copy h2, .copy p{
+.home .copy h2,
+.home .copy p{
   color:#222;
 }
-.copy p{
+.home .copy p{
   font-weight:400;
   font-size:20px;
 }
-.invert h2, .invert p{
+.home .invert h2,
+.home .invert p{
   color:#fff;
 }
-.cal{
+.home .cal{
   display: inline-block;
   width:130px;
   color:#444;
@@ -93,35 +89,38 @@ section.copy{
   background:#2c3e50;
   border:solid 4px #fff;
 }
-.cal .day, .cal .month, .cal .year{
+.home .cal .day,
+.home .cal .month,
+.home .cal .year{
   display: block;
 }
-.cal .day{
+.home .cal .day{
   font-size: 58px;
   background: #fff;
 }
-.cal .month, .cal .year{
+.home .cal .month,
+.home .cal .year{
   color:white;
   font-size: 20px;
   font-family: 'Raleway Dots', serif;
 }
-.ticket{
+.home .ticket{
   max-width:500px;
   display: block;
   margin: 65px auto 0;
 }
-.ticket img{
+.home .ticket img{
   width:100%;
 }
-.leftbox{
+.home .leftbox{
   background: #222;
 }
-.leftbox{
+.home .leftbox{
   text-align:left;
   max-width: 600px;
   padding: 1px 36px 50px 50px;
 }
-.leftbox h1{
+.home .leftbox h1{
   font-family: 'Raleway Dots', serif;
   font-size:60px;
   border-bottom:solid white 4px;
@@ -141,36 +140,36 @@ section.copy{
    1px -1px 0 #222,
   -1px  1px 0 #222;
 }
-.leftbox p {
+.home .leftbox p {
   font-weight: 200;
   font-size:16px;
 }
-footer{
+.home footer{
   margin-top:100px;
   background:#222;
   line-height:3em;
   letter-spacing:1px;
 }
-footer p{
+.home footer p{
   margin-bottom:0;
 }
-footer a{
+.home footer a{
   color:gold;
 }
 
 @media screen and (min-width:600px) {
-  #logo h1 {
+  .home #logo h1 {
     font-size: 84px;
   }
-  .us{
+  .home .us{
     display:block;
   }
-  #details{
+  .home #details{
     background:url("http://photos1.meetupstatic.com/photos/event/a/5/c/0/highres_365502432.jpeg") no-repeat right center;
   }
 }
 @media screen and (min-width:1524px) {
-  #details{
+  .home #details{
     background-size:calc(100% - 500px) auto;
   }
 }
