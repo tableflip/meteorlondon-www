@@ -1,57 +1,68 @@
 <template name="home">
+<nav>
+  <header class="logo">
+    <a class="meteor" href="http://meteor.com">Meteor</a>
+    <a class="london" href="http://meteor.com">London</a>
+  </header>
+
+  <a class="item" href="">Introduction to Meteor</a>
+  <a class="item" href="">Database Everywhere</a>
+  <a class="item" href="">Reactive Templating</a>
+  <a class="item" href="">Users, Accounts &amp; Auth</a>
+  <a class="item" href="">Going live</a>
+
+  <a class="btn-ticket">
+    Buy A Ticket
+  </a>
+</nav>
+
 <section id="hero">
-  <div id="logo">
-    <div class="container">
-      <h1>Meteor London</h1>
-      <div class="us">
-        <p>Meteor development specialists based in London, UK</p>
-        <a href="https://twitter.com/_alanshaw">
-          <img src="http://gravatar.com/avatar/e36dc772e40dc8203ef90fa98e5b3adf" title="Alan Shaw">
-        </a>
-        <a href="https://twitter.com/cwaring">
-          <img src="http://gravatar.com/avatar/a762278bf0255d682fa666f1e6338a9a" title="Chris Waring">
-        </a>
-        <a href="https://twitter.com/olizilla">
-          <img src="https://s.gravatar.com/avatar/1114a99d8da01f890f39c02bd2b1bfc3" title="Oli Evans">
-        </a>
-      </div>
-      <h2>Workshop: 1 day to launch</h2>
-      <p class="lead">8h intensive training to take you from idea to deployment in a day</p>
-    </div>
-  </div>
+  <header class="logo dark">
+    <a class="meteor" href="http://meteor.com">Meteor</a>
+    <a class="london" href="http://meteor.com">London</a>
+  </header>
+  <h1>From prototype to product in a day</h1>
+  <h2><span title="You'll be writing code">Hands on</span> training to guide you from <span title="for real.">idea to deployment</span></h2>
 </section>
 
-<section id="date">
-  <div class="container">
-    <time class="cal" datetime="2014-10-31">
-      <span class="day">31</span>
-      <span class="month">October</span>
-      <span class="year">2014</span>
-    </time>
-  </div>
+<section id="us" class="us">
+  <p>From the official Meteor Devshop London group</p>
+  <a href="https://twitter.com/_alanshaw">
+    <img src="http://gravatar.com/avatar/e36dc772e40dc8203ef90fa98e5b3adf" title="Alan Shaw">
+  </a>
+  <a href="https://twitter.com/cwaring">
+    <img src="http://gravatar.com/avatar/a762278bf0255d682fa666f1e6338a9a" title="Chris Waring">
+  </a>
+  <a href="https://twitter.com/olizilla">
+    <img src="https://s.gravatar.com/avatar/1114a99d8da01f890f39c02bd2b1bfc3" title="Oli Evans">
+  </a>
+</section>
+
+<section id="next">
+  Next workshop:
+  <time class="cal" datetime="2014-10-31">
+    <span class="day">31</span>
+    <span class="month">October</span>
+  </time>
 </section>
 
 <section id="intro" class="copy">
-  <div class="container">
     <h2>What you'll get</h2>
     <p><strong>A full-stack introduction to building web apps with Meteor.</strong>
       With hands on modules covering the <strong>frontend</strong> &amp; <strong>backend</strong>,
       <strong>security</strong> &amp; <strong>deployment</strong>, we'll show you
       every step of the journey from static HTML to a dynamic, real-time app.
     </p>
-  </div>
 </section>
 
 <section id="tickets" class="copy">
-  <div class="container">
     <h2>Early-bird tickets</h2>
     <p>Tickets are £600 per person. As a reward for booking early we've got
       <br><strong>10 discounted early-bird tickets available at £500.</strong></p>
     <a href="https://ti.to/tableflip/meteor-training?release_id=wtltie0cjei" class="btn btn-primary">Buy on tito</a>
-    <a class="ticket" href="https://ti.to/tableflip/meteor-training?release_id=wtltie0cjei">
-      <img src="/img/ticket.svg" alt="Grab a ticket">
-    </a>
-  </div>
+<!--     <a class="ticket" href="https://ti.to/tableflip/meteor-training?release_id=wtltie0cjei">
+  <img src="/img/ticket.svg" alt="Grab a ticket">
+</a> -->
 </section>
 
 <section id="details" class="copy invert">
@@ -82,7 +93,6 @@
 </section>
 
 <section id="more-info" class="copy">
-  <div class="container">
     <h2>Would you like to know more?</h2>
     <form class="register row">
       {{#unless email}}
@@ -100,12 +110,9 @@
       </div>
       {{/unless}}
     </form>
-  </div>
 </section>
 
 <footer>
-  <div class="container">
   <p>A <a href="http://www.meetup.com/Meteor-London/">Meteor London</a> production, brought to you by <a href="http://tableflip.io">TABLEFLIP</a> &amp; <a href="https://wwaves.co">WWAVES</a></p>
-  </div>
 </footer>
 </template>

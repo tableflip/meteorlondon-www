@@ -1,35 +1,65 @@
 body.home {
   margin: 0;
+  padding:0 20px;
   text-align:center;
   background:#eeefef;
+
 }
-.home #hero {
-  background: #000 url(/img/bg.jpg);
-  background-size: cover;
-  min-height: 100%;
-  overflow: auto;
+body.home #hero{
+  background:url("/img/bg.jpg") no-repeat;
 }
-.home #logo {
-  position: absolute;
-  top: 20vh;
-  width: 100%;
-  text-align: center;
+.home nav{
+  display:block;
+  padding-top:1px;
+  background:#102136;
 }
+@media screen and (min-width: 768px) {
+  .home nav{
+    padding-top:0px;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 386px;
+    min-height: 300%;
+  }
+  body.home{
+    margin-left:386px;
+  }
+}
+.home nav .item{
+  display:block;
+  color:#B3C3D7;
+  font-family: 'Roboto', sans-serif;
+  font-size:20px;
+  line-height:40px;
+  padding: 0 0 0 50px;
+  text-align:left;
+}
+.btn-ticket{
+  display:block;
+  border:solid white 5px;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-weight:bold;
+  font-size: 32px;
+  line-height:70px;
+  color:white;
+  text-transform:uppercase;
+  margin: 63px 40px;
+}
+
+
+h1{
+  font-weight:600;
+}
+
+
 .home #register {
   margin-top: 10px;
 }
-.home #logo h1 {
-  position: relative;
-  font-size: 40px;
-  font-family: 'Raleway Dots', serif;
-  font-weight: normal;
-  line-height: 100px;
-  color: #fff;
-  margin: 0;
-}
-.home h1,h2,h3,h4,h5 {
-  color: #fff;
-}
+
+
+
 .home p {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-weight: lighter;
@@ -43,7 +73,6 @@ body.home {
   margin-bottom:100px;
 }
 .home .us img {
-  box-shadow: 0px 0px 1px #000;
   border-radius: 50%;
   margin: 0 10px;
   opacity: 0.8;
@@ -104,14 +133,6 @@ body.home {
   font-size: 20px;
   font-family: 'Raleway Dots', serif;
 }
-.home .ticket{
-  max-width:500px;
-  display: block;
-  margin: 65px auto 0;
-}
-.home .ticket img{
-  width:100%;
-}
 .home .leftbox{
   background: #222;
 }
@@ -146,7 +167,6 @@ body.home {
 }
 .home footer{
   margin-top:100px;
-  background:#222;
   line-height:3em;
   letter-spacing:1px;
 }
