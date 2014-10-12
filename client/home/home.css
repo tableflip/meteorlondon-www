@@ -3,7 +3,7 @@ body.home {
   padding:0 20px;
   text-align:center;
   background:#eeefef;
-
+  background:#00CBE8;
 }
 body.home{
   /* background:url("/img/bg.jpg") no-repeat top right; */
@@ -29,7 +29,7 @@ body.home{
 .home nav .item{
   display:block;
   color:#B3C3D7;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size:20px;
   line-height:40px;
   padding: 0 0 0 50px;
@@ -39,7 +39,7 @@ body.home{
   display:block;
   border:solid white 5px;
   border-radius: 5px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', Helvetica Neue, Helvetica, Arial, sans-serif;
   font-weight:bold;
   font-size: 32px;
   line-height:70px;
@@ -52,6 +52,7 @@ body.home{
   display:block;
   font-weight:200;
   font-size:23px;
+  margin-top:-1.6em;
 }
 nav .btn-ticket{
   margin: 63px 40px;
@@ -60,18 +61,22 @@ nav .btn-ticket{
 h1{
   font-weight:600;
 }
+#hero h2 {
+  color:#000;
+  font-family: 'Roboto', Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size:20px;
+}
 .home #register {
   margin-top: 10px;
 }
-#next label{
-  color: #fff;
-  font-size:39px;
+#next h2{
+  color: #000;
+  font-size:44px;
   font-weight:600;
   font-family: 'Titillium Web', sans-serif;
 }
-
 .home p {
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', Helvetica Neue, Helvetica, Arial, sans-serif;
   font-weight: lighter;
   color: #fff;
   opacity: 0.8;
@@ -81,6 +86,10 @@ h1{
   display:none;
   padding-top:4px;
   margin-bottom:100px;
+}
+.home .us h3{
+  font-size: 20px;
+  margin:8px 0 60px;
 }
 .home .us img {
   border-radius: 50%;
@@ -107,13 +116,12 @@ h1{
 .home section.copy{
   margin-top:50px;
 }
-.home .copy h2,
 .home .copy p{
   color:#222;
-}
-.home .copy p{
   font-weight:400;
-  font-size:20px;
+  font-size:24px;
+  max-width:860px;
+  margin:1em auto;
 }
 .home .invert h2,
 .home .invert p{
@@ -198,7 +206,7 @@ h1{
     display:block;
   }
   .home #details{
-    background:url("http://photos1.meetupstatic.com/photos/event/a/5/c/0/highres_365502432.jpeg") no-repeat right center;
+    /* background:url("http://photos1.meetupstatic.com/photos/event/a/5/c/0/highres_365502432.jpeg") no-repeat right center; */
   }
 }
 @media screen and (min-width:1524px) {
