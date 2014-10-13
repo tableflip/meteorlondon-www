@@ -52,7 +52,7 @@ var scrollToHash = function  (hash, time) {
   time = time || 200
   var $hash = $(hash)
   if ($hash.length) {
-    $('body').animate({
+    $('html, body').animate({
       scrollTop: $(hash).offset().top
     }, time);
   }
