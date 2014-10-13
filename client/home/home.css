@@ -81,6 +81,9 @@ nav .btn-ticket{
   margin: 63px 40px;
   max-width:none;
 }
+nav .contact{
+  margin-top:10px;
+}
 h1{
   font-weight:600;
 }
@@ -138,6 +141,8 @@ h1{
   color:white;
   margin-top:50px;
   border-color:#102136;
+  font-size:18px;
+  letter-spacing:0.4px;
 }
 .home blockquote .attribution a{
   color:#222;
@@ -173,7 +178,7 @@ h1{
 .home .copy p{
   color:#222;
   font-weight:400;
-  font-size:24px;
+  font-size:22px;
   max-width:860px;
   margin:1em auto;
 }
@@ -209,12 +214,17 @@ h1{
   font-family: 'Roboto', sans-serif;
 }
 .home footer{
-  margin-top:100px;
-  line-height:3em;
+  margin-top:200px;
+  line-height:2.8em;
   letter-spacing:1px;
 }
 .home footer p{
   margin-bottom:0;
+}
+.gitter{
+  padding-left: 50px;
+  background: url("/img/gitter.png") no-repeat left center;
+  display:inline-block;
 }
 
 @media screen and (min-width:600px) {
