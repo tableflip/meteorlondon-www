@@ -14,6 +14,8 @@ body.home {
   background:#102136;
   opacity:0;
   -webkit-transition:opacity 1s;
+  -moz-transition:opacity 1s;
+  -o-transition:opacity 1s;
   transition:opacity 1s;
 }
 @media screen and (min-width: 768px) {
@@ -59,12 +61,21 @@ body.home {
   text-transform:uppercase;
   margin: 63px auto;
   max-width:300px;
+  -webkit-transition:color 100ms, background-color 100ms;
+  -moz-transition:color 100ms, background-color 100ms;
+  -o-transition:color 100ms, background-color 100ms;
+  transition: color 100ms, background-color 100ms;
 }
 .btn-ticket small{
   display:block;
   font-weight:200;
   font-size:23px;
   margin-top:-1.6em;
+}
+.btn-ticket:hover{
+  background:white;
+  color:#102136;
+  text-decoration:none;
 }
 nav .btn-ticket{
   margin: 63px 40px;
