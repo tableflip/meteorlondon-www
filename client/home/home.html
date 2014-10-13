@@ -1,19 +1,21 @@
 <template name="home">
 <nav>
   <header class="logo">
-    <a class="meteor" href="http://meteor.com">Meteor</a>
-    <a class="london" href="http://meteor.com">London</a>
+    <a class="meteor" href="/">Meteor</a>
+    <a class="london" href="/">London</a>
   </header>
 
-  <a class="item" href="">Introduction to Meteor</a>
-  <a class="item" href="">Database Everywhere</a>
-  <a class="item" href="">Reactive Templating</a>
-  <a class="item" href="">Users, Accounts &amp; Auth</a>
-  <a class="item" href="">Going live</a>
+  <a class="item" href="#introduction-to-meteor">Introduction to Meteor</a>
+  <a class="item" href="#database-everywhere">Database Everywhere</a>
+  <a class="item" href="#reactive-ui">Reactive UI</a>
+  <a class="item" href="#users-accounts-auth">Users, Accounts &amp; Auth</a>
+  <a class="item" href="#going-live">Going live</a>
 
   <a class="btn-ticket">
     Buy A Ticket
   </a>
+  <p>Tickets are £600
+  <br><a href="#tickets"><strong>10 early-bird tickets available at £500</strong></a></p>
 </nav>
 
 <section id="hero">
@@ -51,6 +53,10 @@
   </a>
 </section>
 
+<section id="testimonials">
+
+</section>
+
 <section id="intro" class="copy">
     <h2>What you'll get</h2>
     <p><strong>A full-stack introduction to building web apps with Meteor.</strong>
@@ -60,31 +66,29 @@
     </p>
 </section>
 
+<section id="details" class="copy">
+      <h2 id="introduction-to-meteor">Introduction to Meteor</h2>
+      <p>What's Meteor made of? How it fits together, and where it fits in the firmament.</p>
+
+      <h2 id="database-everywhere">Database everywhere</h2>
+      <p>Dealing with a client side data, pub/sub &amp; latency compensation.</p>
+
+      <h2 id="reactive-ui">Reactive UI</h2>
+      <p>Coping with change. Blaze templates &amp; automatic DOM updates, dependency tracking &amp; data observers.</p>
+
+      <h2 id="users-accounts-auth">Users, Accounts &amp; Auth</h2>
+      <p>Who are they, and how can I stop them? Authentication &amp; OAuth to figure out who. Authorization, access-control &amp; routing to stop them getting where they shouldn't.</p>
+
+      <h2 id="going-live">Going live</h2>
+      <p>Deploying your app. Testing, packaging, releasing; rinsing &amp; repeating.
+        <br>The fine art of up-time.</p>
+</section>
+
 <section id="tickets" class="copy">
     <h2>Early-bird tickets</h2>
     <p>Tickets are £600 per person. As a reward for booking early we've got
       <br><strong>10 discounted early-bird tickets available at £500.</strong></p>
-    <a href="https://ti.to/tableflip/meteor-training?release_id=wtltie0cjei" class="btn btn-primary">Buy on tito</a>
-<!--     <a class="ticket" href="https://ti.to/tableflip/meteor-training?release_id=wtltie0cjei">
-  <img src="/img/ticket.svg" alt="Grab a ticket">
-</a> -->
-</section>
-
-<section id="details" class="copy">
-      <h2>What's Meteor made of?</h2>
-      <p>How it fits together, and where it fits in the firmament.</p>
-
-      <h2>Database everywhere</h2>
-      <p>Dealing with a client side data, pub/sub &amp; latency compensation.</p>
-
-      <h2>Reactivity</h2>
-      <p>Coping with change. Blaze templates &amp; automatic DOM updates, dependency tracking &amp; data observers.</p>
-
-      <h2>Users</h2>
-      <p>Who are they, and how can I stop them? Authentication &amp; OAuth to figure out who. Authorization, access-control &amp; routing to stop them getting where they shouldn't.</p>
-
-      <h2>Going live</h2>
-      <p>Testing, packaging, releasing; rinsing &amp; repeating. The fine art of up-time.</p>
+      <a href="https://ti.to/tableflip/meteor-training?release_id=wtltie0cjei" class="btn btn-primary">Buy on tito</a>
 </section>
 
 <section id="extras" class="copy">

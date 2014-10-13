@@ -14,6 +14,14 @@ Template.home.helpers({
 })
 
 Template.home.events({
+  'click nav .logo a': function (evt, tpl) {
+    evt.preventDefault()
+    scrollToTop()
+  },
+  'click nav a': function (evt, tpl) {
+    a = $(evt.target)
+    scrollToHash(a.attr('href'));
+  },
   'submit .register': function (evt, tmpl) {
     evt.preventDefault()
 
@@ -37,3 +45,25 @@ Template.home.events({
     }
   }
 })
+
+var scrollToHash = function  (hash, time) {
+  if(hash === "/") return
+  hash = hash || window.location.hash;
+  time = time || 200
+  var $hash = $(hash)
+  if ($hash.length) {
+    $('body').animate({
+      scrollTop: $(hash).offset().top
+    }, time);
+  }
+}
+
+var scrollToTop = function  (time) {
+  time = time || 200
+  $('body').animate({
+    scrollTop: 0
+  }, time);
+}
+
+
+Meteor.startup(scrollToHash);

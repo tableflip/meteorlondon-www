@@ -41,6 +41,11 @@ body.home{
   padding: 0 0 0 50px;
   text-align:left;
 }
+.home nav p {
+  color: #B3C3D7;
+  margin-top:-50px;
+  padding: 0 50px;
+}
 .btn-ticket{
   display:block;
   border:solid white 5px;
