@@ -99,8 +99,8 @@ h1{
   margin-bottom:100px;
 }
 .home .us h3{
-  font-size: 20px;
-  margin:8px 0 60px;
+  font-size: 18px;
+  margin:12px 0 60px;
 }
 .home .us img {
   border-radius: 50%;
@@ -115,11 +115,35 @@ h1{
 .home .us img:hover {
   opacity: 1;
 }
-.home p.lead{
-  color:gold;
-  font-family: 'Raleway Dots', serif;
-  font-weight:600;
+.home blockquote{
+  text-align:left;
+  color:white;
+  margin-top:50px;
 }
+.home blockquote .attribution a{
+  color:#222;
+}
+/*
+.home blockquote{
+  position:relative;
+}
+.home blockquote:before,
+.home blockquote:after{
+  font-size: 2em;
+  color:white;
+  opacity:0.8;
+  position:absolute;
+  top:0;
+}
+.home blockquote:before {
+  content:'“';
+  left: 10px;
+}
+.home blockquote:after {
+  content:'”';
+  right: 10px;
+} */
+
 .home #date{
   margin-top:-86px;
   text-align:center;
