@@ -2,14 +2,10 @@ body.home {
   margin: 0;
   padding:0 20px;
   text-align:center;
-  background:#eeefef;
-  background:#00CBE8;
   background: #00CBE8 url('/img/header-bg.jpg');
   background-repeat: no-repeat;
   background-size: contain;
-}
-body.home{
-  /* background:url("/img/bg.jpg") no-repeat top right; */
+  max-width: 1000px;
 }
 .home nav{
   display:block;
@@ -101,11 +97,17 @@ h1{
 .home .us {
   display:none;
   padding-top:4px;
-  margin-bottom:100px;
+  margin-bottom:50px;
 }
 .home .us h3{
   font-size: 18px;
   margin:12px 0 60px;
+  letter-spacing:1px;
+}
+.home .us a{
+  display:inline-block;
+  width:120px;
+  margin:0 15px;
 }
 .home .us img {
   border-radius: 50%;
@@ -124,6 +126,7 @@ h1{
   text-align:left;
   color:white;
   margin-top:50px;
+  border-color:#102136;
 }
 .home blockquote .attribution a{
   color:#222;
@@ -194,38 +197,6 @@ h1{
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
 }
-.home .leftbox{
-  background: #222;
-}
-.home .leftbox{
-  text-align:left;
-  max-width: 600px;
-  padding: 1px 36px 50px 50px;
-}
-.home .leftbox h1{
-  font-family: 'Raleway Dots', serif;
-  font-size:60px;
-  border-bottom:solid white 4px;
-  text-shadow:
-   0 -3px 0 #222,
-   0  3px 0 #222,
-   2px 0 0 #222,
-  -2px 0 0 #222,
-   0  2px 0 #222,
-   0 -2px 0 #222,
-   2px 0 0 #222,
-  -2px 0 0 #222,
-   0  2px 0 #222,
-   0 -2px 0 #222,
-   1px  1px #222,
-  -1px -1px 0 #222,
-   1px -1px 0 #222,
-  -1px  1px 0 #222;
-}
-.home .leftbox p {
-  font-weight: 200;
-  font-size:16px;
-}
 .home footer{
   margin-top:100px;
   line-height:3em;
@@ -242,12 +213,9 @@ h1{
   .home .us{
     display:block;
   }
-  .home #details{
-    /* background:url("http://photos1.meetupstatic.com/photos/event/a/5/c/0/highres_365502432.jpeg") no-repeat right center; */
-  }
 }
-@media screen and (min-width:1524px) {
-  .home #details{
-    background-size:calc(100% - 500px) auto;
+@media screen and (min-width:1850px) {
+  body.home{
+    background-image:none;
   }
 }

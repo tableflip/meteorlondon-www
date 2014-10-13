@@ -26,6 +26,8 @@ a:hover{
           user-select: none;
 }
 .logo .london{
+  display:block;
+  padding-left:20px;
   font-family:'Roboto', sans-serif;
   font-size:28px;
   letter-spacing:15px;
