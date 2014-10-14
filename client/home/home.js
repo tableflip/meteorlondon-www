@@ -15,7 +15,6 @@ Template.home.helpers({
 
 Template.home.events({
   'click nav .logo a': function (evt, tpl) {
-    evt.preventDefault()
     scrollToTop()
   },
   'click nav a': function (evt, tpl) {
@@ -46,11 +45,18 @@ Template.home.events({
   }
 })
 
+// Get scolling to anchor on page load working until this lands
+// https://github.com/EventedMind/iron-router/commit/65b844eb0d988d93b1ac8a5bf54966d4dd2f0c46
+Template.home.rendered = function () {
+  scrollToHash()
+}
+
 var scrollToHash = function  (hash, time) {
   if(hash === "/") return
   hash = hash || window.location.hash;
   time = time || 200
   var $hash = $(hash)
+  console.log('scrollToHash', hash, $hash.length)
   if ($hash.length) {
     $('html, body').animate({
       scrollTop: $(hash).offset().top
@@ -65,5 +71,7 @@ var scrollToTop = function  (time) {
   }, time);
 }
 
-
-Meteor.startup(scrollToHash);
+// Meteor.startup(function() {
+//   console.log('scrollToHash startup')
+//   Meteor.setTimeout(scrollToHash, 100)
+// })
