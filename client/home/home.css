@@ -1,9 +1,9 @@
+
 body.home {
   margin: 0;
   padding:0 20px;
   text-align:center;
-  background: #00CBE8 url('/img/header-bg.jpg');
-  background-repeat: no-repeat;
+  background: #00CBE8 url('/img/header-bg.jpg') no-repeat;
   background-size: contain;
   max-width: 1200px;
 }
@@ -139,7 +139,6 @@ h1{
 .home blockquote{
   text-align:left;
   margin-top:20px;
-  /*border-color:#102136;*/
   border: none;
   font-family: 'Titillium Web', sans-serif;
   font-style: italic;
@@ -147,15 +146,15 @@ h1{
   color:#C7F8FF;
   letter-spacing:0.4px;
 }
-.home blockquote strong{
-
+.home blockquote strong {
+  color: #fff;
 }
-.home blockquote .attribution a{
+.home blockquote .attribution a {
   color:#222;
   font-family: 'Roboto', Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
-.home blockquote .attribution img{
+.home blockquote .attribution img {
   max-width: 60px;
   border-radius: 50%;
   border: 3px #fff solid;
