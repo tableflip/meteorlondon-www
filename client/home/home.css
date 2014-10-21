@@ -8,7 +8,7 @@ body.home {
   max-width: 1200px;
 }
 .home nav{
-  display:block;
+  display:none;
   padding-top:1px;
   height:0;
   background:#102136;
