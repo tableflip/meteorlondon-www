@@ -11,11 +11,16 @@
   <a class="item" href="#users-accounts-auth">Users, Accounts &amp; Auth</a>
   <a class="item" href="#going-live">Going live</a>
 
+{{!--
   <a class="btn-ticket" href="https://ti.to/tableflip/meteor-training">
     Buy A Ticket
   </a>
+--}}
+  <a class="btn-ticket" href="#next">
+    <span>Register</span>
+  </a>
   <p>Tickets are £500<br>
-    <a href="#tickets"><strong>3 tickets left</strong></a>
+    <a href="#tickets"><strong>{{spotsLeft}} spots left</strong></a>
   </p>
 
   <a class="contact" href="#contact-us">Got questions? Get in touch.</a>
@@ -48,16 +53,70 @@
 
 <section id="next">
   <h2>Next workshop
+  {{!--
   <time datetime="2014-10-31">
     <span class="month">October</span>
     <span class="day">31st</span>
   </time>
   <p>9am - 6pm</p>
+  --}}
+  <p>you decide:</p>
   </h2>
+  {{!--
   <a class="btn-ticket" href="https://ti.to/tableflip/meteor-training">
     <span>Buy Ticket</span>
     <small>3 remaining</small>
   </a>
+  --}}
+  <div class="row">
+    <form class="form-horizontal col-sm-6 col-sm-offset-3">
+      <input type="hidden" name="training-id" value="2014-12">
+      <input type="hidden" name="training-capacity" value="16">
+      <div class="form-group">
+        <label class="col-sm-3 control-label" for="next-email">Attendee</label>
+        <div class="col-sm-9">
+          <input id="next-email" name="email" class="form-control" placeholder="Email Address" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-3 control-label" for="next-weekend">When?</label>
+        <div class="col-sm-9">
+          <p style="padding-top:11px">Tick all that apply!</p>
+          <label><input id="next-weekend" type="checkbox" value="weekend"> Weekend</label><br>
+          <label><input type="checkbox" value="weekday"> Weekday</label><br>
+          <label><input type="checkbox" value="december"> December</label><br>
+          <label><input type="checkbox" value="january"> January</label><br>
+        </div>
+      </div>
+      <button class="btn-ticket" type="submit">
+        <span>Register</span>
+        <small>Interest</small>
+      </button>
+      <p>Tickets are £500</p>
+    </form>
+  </div>
+
+  <div id="attendees">
+    <h3>{{spotsLeft}} spots left</h3>
+    <ul class="row">
+      {{#each attendees}}
+        <li class="col-xs-3 col-sm-2{{#if avatar}} filled{{/if}}{{#if zeroMod index 4}} col-sm-offset-2{{/if}}">
+          <a href="{{avatar}}">{{#if avatar}}<img src="{{avatar}}">{{/if}}</a>
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+
+  {{#if isWaitlist}}
+  <div id="waitlist">
+    <h3>Waitlist</h3>
+    <ul>
+      {{#each waitlist}}
+      <li><a href="{{avatar}}"><img src="{{avatar}}"></a></li>
+      {{/each}}
+    </ul>
+  </div>
+  {{/if}}
 </section>
 
 <section id="intro" class="copy">
@@ -142,12 +201,19 @@
 </section>
 
 <section id="tickets" class="copy">
-  <p>Tickets are £500 per person. <br><strong>3 spots left.</strong></p>
-    <a href="https://ti.to/tableflip/meteor-training" class="btn-ticket">
-      <span>Buy Ticket</span>
-    </a>
+  <p>Tickets are £500 per person. <br><strong>{{spotsLeft}} spots left.</strong></p>
+{{!--
+  <a href="https://ti.to/tableflip/meteor-training" class="btn-ticket">
+    <span>Buy Ticket</span>
+  </a>
+--}}
+  <a class="btn-ticket" href="#next">
+    <span>Register</span>
+    <small>Interest</small>
+  </a>
 </section>
 
+{{!--
 <section id="scholarship" class="copy scholarship">
   <h2>Scholarship</h2>
   <p>In collaboration with <a href="https://twitter.com/ladieswhocode">Ladies Who Code</a> we're offering a <strong>full scholarship place</strong>.
@@ -155,6 +221,7 @@
     The closing date for applications is the <strong>24th&nbsp;October.</strong> If you have any questions, <a href="https://gitter.im/meteor-london/training">get in touch</a>.
   </p>
 </section>
+--}}
 
 <section id="contact-us" class="copy">
   <h2>Would you like to know more?</h2>
